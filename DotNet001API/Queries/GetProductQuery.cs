@@ -27,6 +27,19 @@ namespace DotNet001API.Queries
             {
 
                 var query = _dataContext.Products.Where(x => x.Id == request.Id).FirstOrDefault();
+
+                if (query is null)
+                {
+                    return Task.FromResult(new OperationObjectResponse<Product>
+                    {
+                        Value = new Product(),
+                        HttpResponseMessage = new HttpResponseMessage
+                        {
+                            StatusCode = HttpStatusCode.BadRequest
+                        }
+                    });
+                }
+
                 var autoMapped = _mapper.Map<Product>(query);
 
                 return Task.FromResult(new OperationObjectResponse<Product>

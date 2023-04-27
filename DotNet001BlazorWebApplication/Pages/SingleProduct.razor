@@ -17,10 +17,14 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var response = await WebServiceApi.GetProductById(1);
+        var response = await WebServiceApi.GetProductById(Id);
         if (response.HttpResponseMessage.IsSuccessStatusCode)
         {
             this.Product = response.Product;
+        }
+        else
+        {
+            this.Product.Name = "No results";
         }
 
     }
