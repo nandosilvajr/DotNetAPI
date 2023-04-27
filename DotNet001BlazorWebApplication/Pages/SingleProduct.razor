@@ -1,0 +1,27 @@
+@page "/products/{Id:int}"
+@using DotNet001Shared.Models
+@using DotNet001BlazorWebApplication.Interfaces
+@using System.Net
+@inject IWebServiceAPI WebServiceApi
+<h3>SingleProduct</h3>
+<div>
+    @Product.Name
+</div>
+
+@code {
+
+    [Parameter]
+    public int Id { get; set; }
+
+    private Product Product { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await WebServiceApi.GetProductById(1);
+        if (response.HttpResponseMessage.IsSuccessStatusCode)
+        {
+            this.Product = response.Product;
+        }
+
+    }
+}

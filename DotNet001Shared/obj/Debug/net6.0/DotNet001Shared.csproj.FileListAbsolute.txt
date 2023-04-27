@@ -1,0 +1,12 @@
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\bin\Debug\net6.0\DotNet001Shared.deps.json
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\bin\Debug\net6.0\DotNet001Shared.dll
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\bin\Debug\net6.0\DotNet001Shared.pdb
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\obj\Debug\net6.0\DotNet001Shared.csproj.AssemblyReference.cache
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\obj\Debug\net6.0\DotNet001Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\obj\Debug\net6.0\DotNet001Shared.AssemblyInfoInputs.cache
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\obj\Debug\net6.0\DotNet001Shared.AssemblyInfo.cs
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\obj\Debug\net6.0\DotNet001Shared.csproj.CoreCompileInputs.cache
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\obj\Debug\net6.0\DotNet001Shared.dll
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\obj\Debug\net6.0\refint\DotNet001Shared.dll
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\obj\Debug\net6.0\DotNet001Shared.pdb
+C:\Users\Fernando\source\repos\DotNet001APIBKp\DotNet001Shared\obj\Debug\net6.0\ref\DotNet001Shared.dll

@@ -1,0 +1,34 @@
+﻿@page "/products"
+@using DotNet001Shared.Models;
+@using Interfaces
+@using System.Diagnostics;
+@inject IWebServiceAPI WebServiceAPI
+
+<h3>Products</h3>
+@if(ProductsData is not null && ProductsData.Any()) {
+    foreach (var product in ProductsData)
+    {
+        <p>@product.Name</p>
+    }
+}
+
+@code {
+    List<Product> ProductsData { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var response = await WebServiceAPI.GetProducts();
+
+            ProductsData = response.Value as List<Product>;
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine(ex);
+            throw;
+        }
+        
+    }
+
+}
