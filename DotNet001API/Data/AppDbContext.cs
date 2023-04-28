@@ -16,7 +16,7 @@ namespace DotNet001API.Data
         {
             base.OnConfiguring(optionsBuilder);
 
-            optionsBuilder.UseSqlServer(@"Data Source=secalhar.dynip.sapo.pt,1433;Initial Catalog=AppDataBase; Password=CodFix€#2@Z3; User Id=SA; Trusted_Connection=True; TrustServerCertificate=True; Integrated Security = False;");
+            optionsBuilder.UseSqlServer(@"Data Source=,1433;Initial Catalog=AppDataBase; Password=; User Id=SA; Trusted_Connection=True; TrustServerCertificate=True; Integrated Security = False;");
         }
 
     }
